@@ -69,7 +69,7 @@ public class DBinput
             pstmt.setNull(7, Types.REAL);
             pstmt.setNull(8, Types.REAL);
             pstmt.setNull(9, Types.REAL);
-            pstmt.setString(10, "N.A");
+            pstmt.setNull(10, Types.REAL);
             pstmt.setString(11, strength_new.workOutGoal);
             pstmt.setNull(12, strength_new.weight);
             pstmt.setNull(13, strength_new.reps);

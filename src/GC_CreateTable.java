@@ -22,12 +22,12 @@ public class GC_CreateTable {
                     " AVG_HR        INT, " +
                     " AVG_WORKING_HR        INT, " +
                     " MAX_HR        INT, " +
-                    " WEATHER       TEXT     NOT NULL," +
-                    " WORKOUT_GOAL  TEXT     NOT NULL," +
+                    " WEATHER       TEXT," +
+                    " WORKOUT_GOAL  TEXT," +
                     " WEIGHT        INT, " +
                     " REPS          INT, " +
                     " SETS          INT," +
-                    " Comment       TEXT    NOT NULL)";
+                    " Comment       TEXT)";
             stmt.executeUpdate(sql);
             stmt.close();
             c.close();
