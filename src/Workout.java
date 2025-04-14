@@ -17,10 +17,14 @@ class Cycling extends Workout
 
     double calc_speed()
     {
+        double speed;
+
         if (distance == -1 || time == -1) {
             return -1;
         }
-        return distance / (time / 60);
+        speed = distance / (time / 60);
+        speed = Math.round(speed * 100.0) / 100.0;
+        return speed;
     }
 }
 
@@ -38,10 +42,14 @@ class Running extends Workout
 
     double calc_pace()
     {
+        double pace;
+
         if (distance == -1 || time == -1) {
             return -1;
         }
-        return time / distance;
+        pace = time/distance;
+        pace = Math.round(pace * 100.0) / 100.0;
+        return pace;
     }
 }
 
